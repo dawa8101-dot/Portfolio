@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Awa Deborah Adaku - Software engineering student and frontend developer. Send a message.">
+  <title>Contact Me | Awa Deborah Adaku</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        DeborahAdaku<span class="logo-dot"></span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Academic Planner</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Page Main Content -->
+  <main class="page-section">
+    <div class="container fade-in">
+      
+      <div class="page-header">
+        <h1 class="page-title">Contact Me</h1>
+        <p class="page-subtitle">Interested in collaborating or hiring? Reach out via the form below or connect through social links.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left Side: Contact Information Cards -->
+        <div class="glass-card contact-info">
+          <h2 style="font-size: 22px; margin-bottom: 20px; color: var(--primary);">Contact Details</h2>
+          
+          <div class="info-item">
+            <div class="info-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4>Email Address</h4>
+              <p><a href="mailto:d.awa8101@miva.edu.ng" style="color: inherit;">d.awa8101@miva.edu.ng</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon-box">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <h4>Phone Number</h4>
+              <p><a href="tel:07070269070" style="color: inherit;">07070269070</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Location</h4>
+              <p>Nigeria</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon-box">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="info-content">
+              <h4>Education Affiliation</h4>
+              <p>Miva Open University</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form and Validation Message -->
+        <div class="glass-card">
+          <h2 style="font-size: 22px; margin-bottom: 24px; color: var(--primary);">Send a Message</h2>
+          
+          <!-- Dynamic Alert Box for JS Validation Messages -->
+          <div id="form-alert" class="form-alert"></div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="Awa Deborah Adaku">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="name@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" placeholder="07070269070">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Awa Deborah Adaku. All rights reserved.</p>
+      <div class="social-links">
+        <a href="mailto:d.awa8101@miva.edu.ng" class="social-icon" aria-label="Email Awa"><i class="fas fa-envelope"></i></a>
+        <a href="tel:07070269070" class="social-icon" aria-label="Call Awa"><i class="fas fa-phone"></i></a>
+        <a href="#" class="social-icon" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
